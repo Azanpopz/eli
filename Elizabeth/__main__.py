@@ -39,31 +39,31 @@ from Elizabeth.modules.helper_funcs.alternate import typing_action
 
 
 PM_START_TEXT = f"""
-`Hi..Welcome` [🦋](https://telegra.ph/file/debaabe44781f92783315.jpg)
-`I'm`  єlízαвєth
+`Hi..Welcome` [⚡](https://telegra.ph/file/2e9d70133469e34fbafe1.jpg)
+`ME IZ` ⚡⚡𝙾𝙿 𝚁𝙾𝙲𝙺𝚈 𝚁𝙸𝚂𝙷𝙸𝚂𝚄𝙿𝙴𝚁𝚈𝙾 𝙱𝙾𝚃 ⚡`
 `I'm here to help you manage your groups.. Click Help button to find out more about how to use me to my full potential..`
 """
 
-buttons = [[InlineKeyboardButton(text=" HELP AND COMMANDS ❓",
+buttons = [[InlineKeyboardButton(text=" HELP AND COMMANDS 🤔",
                                   callback_data="help_back"),
 ]]
 
-buttons += [[InlineKeyboardButton(text="♻️ ADD ME TO YOUR GROUP ♻️",
+buttons += [[InlineKeyboardButton(text="⚡ ADD ME TO YOUR GROUP ⚡",
                                   url="t.me/Elizabeth_TgBot?startgroup=true"),
 ]]
 
-buttons += [[InlineKeyboardButton(text="SOURCE CODE 💫",
-                                  url="https://t.me/MR_SHRLOCK/49"),
-             InlineKeyboardButton(text="SUPPORT🌳",
-                                  url="https://t.me/joinchat/oxSPzt02LkgxOTY9"),
+buttons += [[InlineKeyboardButton(text="⚡⚡OWNER⚡😎",
+                                  url="https://t.me/Rishisuperyo"),
+             InlineKeyboardButton(text="SUPPORT",
+                                  url="https://t.me/Op_Rocky_Rishisuperyo_BotSupport"),
 ]]
 
-buttons += [[InlineKeyboardButton(text="🎀 CLOSE THE MENU 🎀",
+buttons += [[InlineKeyboardButton(text="🙂 CLOSE THE MENU 🙂",
                                   callback_data="close_menu")]]
 
 
 HELP_STRINGS = f"""
-`Hi.. I'm` єlízαвєth[🦋](https://telegra.ph/file/54ed9e0d6eef2cc730f12.jpg)
+`Hi.. I'm` 𝙾𝙿 𝚁𝙾𝙲𝙺𝚈 𝚁𝙸𝚂𝙷𝙸𝚂𝚄𝙿𝙴𝚁𝚈𝙾 𝙱𝙾𝚃[⚡](https://telegra.ph/file/54ed9e0d6eef2cc730f12.jpg)
 `Click on the buttons below to get documentation about specific modules..`"""
 
 
@@ -284,7 +284,7 @@ def help_button(update, context):
                 text=text,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup([[
-                    InlineKeyboardButton(text="🔙 Back",
+                    InlineKeyboardButton(text="🙂 Back",
                                          callback_data="help_back")
                 ]]),
             )
@@ -341,12 +341,12 @@ def get_help(update, context):
     if chat.type != chat.PRIVATE:
 
         update.effective_message.reply_text(
-            "Contact me in PM to get the list of possible commands.🚸",
+            "Contact me in PM to get the list of possible commands. 😎⚡",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help ❓",
+                            text="Help 🤔",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ]
